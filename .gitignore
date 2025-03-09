@@ -1,0 +1,11 @@
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.sdf
+*.exe
+*.dll
+*.pdb
+*.idb
+x64/
+Debug/
+Release/
