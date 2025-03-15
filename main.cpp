@@ -10,12 +10,12 @@ static SDL_Renderer* renderer = nullptr;
 bool initialize() {
     SDL_SetAppMetadata("Snake Game", "1.0", "com.example.snakegame");
 
-    if (SDL_Init(SDL_INIT_VIDEO) != 0) {
+    if (SDL_Init(SDL_INIT_VIDEO) != true) {
         std::cerr << "Couldn't initialize SDL: " << SDL_GetError() << std::endl;
         return false;
     }
 
-    if (SDL_CreateWindowAndRenderer("Snake Game", 640, 480, 0, &window, &renderer) != 0) {
+    if (SDL_CreateWindowAndRenderer("Snake Game", 640, 480, 0, &window, &renderer) != true) {
         std::cerr << "Couldn't create window/renderer: " << SDL_GetError() << std::endl;
         return false;
     }
